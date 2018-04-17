@@ -11,7 +11,7 @@ import { User } from '../user';
 
 export class FormComponent implements OnInit {
   user = new User;
-  countries: any[];
+  countries: String[];
 
   constructor(private formService: FormService, public usersService: UsersService) { }
 
