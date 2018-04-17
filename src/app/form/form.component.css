@@ -1,48 +1,69 @@
-input[type=text]  , select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: rgb(76, 175, 80);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 1%;
-  width: 93%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-top: 100px;
+    padding-top: 80px;
+    height: auto;
 }
 
-h1{
-  text-align: center;
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 2%;
+    grid-template-rows: repeat(10, auto);
+    grid-row-gap: 2%;
+    margin: 0 3% 0 3%;
+    background-color: coral;
+    border-radius: 14px;
+    padding: 10px;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0.2px blanchedalmond;
 }
 
-input[type=email]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+h2 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.fname {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#fname {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+
+.lname {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#lname {
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
+
+.country {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#country {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.lemail {
+    grid-column: 1;
+    grid-row: 8;
+}
+
+#lemail {
+    grid-column: 1 / 4;
+    grid-row: 9;
+}
+
+.submit {
+    grid-column: 2;
+    grid-row: 10;
+    border-radius: 14px;
 }
