@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 import { RoutesModule } from './routes.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+
+import { FormService } from './form.service';
+import { UsersService } from './users.service';
+import { InMemoryCountriesFormService } from './in-memory-countries-form.service';
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FormComponent } from './form/form.component';
-import { InMemoryCountriesFormService } from './in-memory-countries-form.service';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { FormService } from './form.service';
-import { UsersService } from './users.service';
+import { ListUsersComponent } from './list-users/list-users.component';
+
 
 
 @NgModule({
@@ -18,7 +22,8 @@ import { UsersService } from './users.service';
     AppComponent,
     MenuComponent,
     InicioComponent,
-    FormComponent
+    FormComponent,
+    ListUsersComponent
   ],
   imports: [
     BrowserModule,
