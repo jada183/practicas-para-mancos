@@ -8,7 +8,7 @@ const httpOptions = {
 };
 @Injectable()
 export class FormService {
-  private countriesListUrl = 'api/menuoption';
+  private countriesListUrl = 'api/countries';
   constructor(private http: HttpClient) { }
   getCountries(): Observable<String[]> {
     return this.http.get<String[]>(this.countriesListUrl)

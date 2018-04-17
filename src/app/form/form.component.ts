@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {FormService } from '../form.service';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
-
+  countries: any[];
+  constructor(private formService: FormService) { }
   ngOnInit() {
+    this.getCoutries();
+  }
+  getCoutries(): void {
+    this.formService.getCountries().subscribe(countries => this.countries = countries);
   }
 
 }
