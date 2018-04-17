@@ -1,9 +1,13 @@
+body {
+    height: 100%;
+}
+
 @font-face {
     font-family: "FontH2";
     src: url("../Fonts/AlfaSlabOne-Regular.ttf");
 }
 
-section {
+.inicio {
     height: 100%;
     background-image: url("../Images/desarrollo-web.jpg");
     background-size: 100% 100%;
