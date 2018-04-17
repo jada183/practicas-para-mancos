@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { InMemoryCountriesFormService } from './in-memory-countries-form.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { FormService } from './form.service';
+import { UsersService } from './users.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { FormService } from './form.service';
       InMemoryCountriesFormService, { dataEncapsulation: false }
     )
   ],
-  providers: [InMemoryCountriesFormService, FormService],
+  providers: [InMemoryCountriesFormService, FormService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
