@@ -6,7 +6,13 @@
             </tr>
         </thead>
         <tbody>
-
+            <tr *ngFor="let user of usersService.users">
+                <td>{{user.name}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.country}}</td>
+                <td>{{user.email}}</td>
+                <td><button (click)="usersService.delete(user)">X</button></td>
+            </tr>
         </tbody>
     </table>
 </section>
