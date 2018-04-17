@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { InMemoryCountriesFormService } from './in-memory-countries-form.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { FormService } from './form.service';
+import { ListUsersComponent } from './list-users/list-users.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormService } from './form.service';
     AppComponent,
     MenuComponent,
     InicioComponent,
-    FormComponent
+    FormComponent,
+    ListUsersComponent
   ],
   imports: [
     BrowserModule,
