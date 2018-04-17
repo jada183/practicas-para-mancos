@@ -24,6 +24,13 @@ export class FormComponent implements OnInit {
   }
 
   addUser(): void {
-    this.usersService.add(this.user);
+    if (this.user.name === undefined || this.user.name === ''
+        || this.user.lastName === undefined || this.user.lastName === ''
+        || this.user.country === undefined || this.user.country === '' || this.user.country === 'Pais'
+        || this.user.email === undefined || this.user.email === '') {
+        return null;
+    } else {
+      this.usersService.add(this.user);
+    }
   }
 }
