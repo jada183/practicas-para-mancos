@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
+
 @Injectable()
 export class InMemoryCountriesFormService implements InMemoryDbService {
   createDb() {
@@ -35,6 +36,5 @@ export class InMemoryCountriesFormService implements InMemoryDbService {
     ];
     return  { countries };
   }
-  constructor() { }
-
+  constructor() {}
 }
