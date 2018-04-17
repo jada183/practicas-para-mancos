@@ -11,7 +11,7 @@ import { User } from '../user';
 
 export class FormComponent implements OnInit {
   user = new User;
-  countries: any[];
+  countries: String[];
 
   constructor(private formService: FormService, public usersService: UsersService) { }
 
@@ -24,6 +24,13 @@ export class FormComponent implements OnInit {
   }
 
   addUser(): void {
-    this.usersService.add(this.user);
+    if (this.user.name === undefined || this.user.name === ''
+        || this.user.lastName === undefined || this.user.lastName === ''
+        || this.user.country === undefined || this.user.country === '' || this.user.country === 'Pais'
+        || this.user.email === undefined || this.user.email === '') {
+        return null;
+    } else {
+      this.usersService.add(this.user);
+    }
   }
 }

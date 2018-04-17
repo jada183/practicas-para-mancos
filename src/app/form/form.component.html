@@ -6,16 +6,16 @@
             <input type="text" id="fname" name="firstname" placeholder="tu nombre.." [(ngModel)]="user.name">
 
             <label for="lname" class="lname">Apellidos</label>
-            <input type="text" id="lname" name="lastname" placeholder="tu apellido ..">
+            <input type="text" id="lname" name="lastname" placeholder="tu apellido .." [(ngModel)]="user.lastName">
 
             <label for="country" class="country">Pais</label>
-            <select id="country" name="country">
-              <option value="Pais">Selecciona un país</option>
-              <option *ngFor="let country of countries">{{country}}</option>
+            <select id="country" name="country" [(ngModel)]="user.country">
+              <option value="Pais" selected > Selecciona un país</option>
+              <option *ngFor="let country of countries" value="{{country}}">{{country}}</option>
             </select>
 
             <label for="lemail" class="lemail">Correo</label>
-            <input type="email" id="lemail" name="lemail" placeholder="ejemplo@gmail.com">
+            <input type="email" id="lemail" name="lemail" placeholder="ejemplo@gmail.com"  [(ngModel)]="user.email">
 
             <button class="submit" (click)="addUser()">Registrar</button>
         </div>
