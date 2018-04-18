@@ -1,20 +1,25 @@
 button {
-  padding: 1% 5% 1% 5%;
-  font-size: 18px;
-  border-radius: 14px;
+    padding: 1% 5% 1% 5%;
+    font-size: 18px;
+    border-radius: 14px;
 }
 
 button:hover {
-  cursor: pointer;
-  background-color: #cfd8dc;
+    cursor: pointer;
+    background-color: #cfd8dc;
 }
 
-nav {
-  margin-left: 10px;
-  margin-bottom:10px;
-  margin-top: 10px;
-  position: fixed;
-  top: 10px;
-  width: 100%;
+.fixed {
+    margin-left: 2%;
+    margin-bottom: 10px;
+    margin-top: 2%;
+    position: fixed;
+    top: 10px;
+    width: 98%;
 }
 
+.unfixed {
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 98%;
+}

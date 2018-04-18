@@ -1,31 +1,36 @@
-.service{
-  padding-top: 150px;
+.service {
+    padding-top: 100px;
 }
-h2 {
-  text-align: center;
-  color: blue;
-}
- div {
 
-   background:#f8fad3;
-   margin-left: 3%;
-   margin-right: 3%;
-   height: 100%;
- }
- p{
-  font:oblique 120% cursive,;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-family: fantasy;
- }
- .infoAditional{
-   background:#bbfaed;
-   margin-top: 20px;
- }
- .infoAditionalLink{
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+div {
+    background: #f8fad3;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 98%;
+}
+
+p {
+    font: oblique 120% cursive, ;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: fantasy;
+}
+
+.infoAditional {
+    background: #bbfaed;
+    padding-top: 20px;
+}
+
+.infoAditionalLink {
     color: blue;
     text-decoration: underline;
- }
- .infoAditionalLink:hover{
+}
+
+.infoAditionalLink:hover {
     cursor: pointer;
- }
+}

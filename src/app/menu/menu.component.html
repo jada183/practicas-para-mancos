@@ -1,7 +1,7 @@
-<nav>
-    <button routerLink='/inicio'>inicio</button>
-    <button routerLink='/users'>Listado de Usuarios</button>
-    <button routerLink='/formulario'>Registro</button>
-    <button routerLink='/sopa'>Sopa</button>
-    <button routerLink='/servicios'>Servicios</button>
+<nav [class]="nav">
+    <button routerLink='/inicio' (click)="changeClass('inicio')">inicio</button>
+    <button routerLink='/users' (click)="changeClass('usuarios')">Listado de Usuarios</button>
+    <button routerLink='/formulario' (click)="changeClass('registro')">Registro</button>
+    <button routerLink='/sopa' (click)="changeClass('sopa')">Sopa</button>
+    <button routerLink='/servicios' (click)="changeClass('servicios')">Servicios</button>
 </nav>

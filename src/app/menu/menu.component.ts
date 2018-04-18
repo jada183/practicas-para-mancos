@@ -7,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MenuComponent implements OnInit {
+  nav = 'fixed';
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  changeClass(button: String) {
+    if (button === 'servicios') {
+      this.nav = 'unfixed';
+    } else {
+      this.nav = 'fixed';
+    }
+  }
 }
