@@ -2,17 +2,22 @@
     <div class="sizeTable">
         <label for="columns" class="columns">Columnas</label>
         <select id="columns" [(ngModel)]="countColumns">
-          <option *ngFor="let column of rowsColumns"></option>
+          <option *ngFor="let column of rowsColumns">{{column}}</option>
         </select>
+        <br/>
         <label for="rows" class="rows">Filas</label>
         <select id="rows" [(ngModel)]="countRows">
-          <option *ngFor="let row of rowsColumns"></option>
+          <option *ngFor="let row of rowsColumns">{{row}}</option>
         </select>
+        <br/>
         <button (click)="createTable()">Crear Tabla</button>
     </div>
     <div class="table">
         <table>
             <tbody>
+                <tr *ngFor="let td of table">
+                    <td *ngFor="let letter of td">{{letter | uppercase}}</td>
+                </tr>
             </tbody>
         </table>
     </div>
