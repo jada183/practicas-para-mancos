@@ -1,13 +1,13 @@
 <section class="inicio">
     <section id="imgsection">
-      <img src="../../assets/images/imginitial1.png" class="visible">
-      <img src="../../assets/images/imginitial2.jpg" class="hidden" hidden >
-      <img src="../../assets/images/imginitial3.jpg" class="hidden" hidden>
+      <img src="../../assets/images/imginitial1.png" class="{{visibilityimg1}}">
+      <img src="../../assets/images/imginitial2.jpg" class="{{visibilityimg2}}">
+      <img src="../../assets/images/imginitial3.jpg"  class ="{{visibilityimg3}}">
     </section>
     <div id="divbtimg">
-    <input type="radio" class="radioBtImg" checked name="imageoption">
-    <input type="radio" class="radioBtImg"  name="imageoption">
-    <input type="radio" class="radioBtImg" name="imageoption" >
+    <input type="radio" class="radioBtImg"  name="imageoption" (click)='selectImg(1)' [checked]="visibilityimg1b">
+    <input type="radio" class="radioBtImg"  name="imageoption" (click)='selectImg(2)'  [checked]="visibilityimg2b">
+    <input type="radio" class="radioBtImg" name="imageoption" (click)='selectImg(3)'  [checked]="visibilityimg3b">
     </div>
     <h2>Practices for fools</h2>
 
