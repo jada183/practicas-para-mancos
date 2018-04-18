@@ -1,0 +1,19 @@
+<section class="sopa">
+    <div class="sizeTable">
+        <label for="columns" class="columns">Columnas</label>
+        <select id="columns" [(ngModel)]="countColumns">
+          <option *ngFor="let column of rowsColumns"></option>
+        </select>
+        <label for="rows" class="rows">Filas</label>
+        <select id="rows" [(ngModel)]="countRows">
+          <option *ngFor="let row of rowsColumns"></option>
+        </select>
+        <button (click)="createTable()">Crear Tabla</button>
+    </div>
+    <div class="table">
+        <table>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</section>

@@ -14,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FormComponent } from './form/form.component';
 import { ListUsersComponent } from './list-users/list-users.component';
+import { SopaComponent } from './sopa/sopa.component';
 
 
 
@@ -23,7 +24,8 @@ import { ListUsersComponent } from './list-users/list-users.component';
     MenuComponent,
     InicioComponent,
     FormComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    SopaComponent
   ],
   imports: [
     BrowserModule,
