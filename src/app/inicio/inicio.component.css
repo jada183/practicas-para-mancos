@@ -27,6 +27,8 @@ img {
   padding-left: 40px;
 
 }
-.radioBtImg {
-    background: lawngreen
+#divbtimg :first-child {
+  margin-left: 40px;
+
 }
+
