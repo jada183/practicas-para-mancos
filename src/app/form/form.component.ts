@@ -28,6 +28,7 @@ export class FormComponent implements OnInit {
         || this.user.lastName === undefined || this.user.lastName === ''
         || this.user.country === undefined || this.user.country === '' || this.user.country === 'Pais'
         || this.user.email === undefined || this.user.email === '') {
+          confirm('marica');
         return null;
     } else {
       this.usersService.add(this.user);
