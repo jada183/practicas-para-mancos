@@ -34,3 +34,10 @@ p {
 .infoAditionalLink:hover {
     cursor: pointer;
 }
+
+#serviciosMancos div:first-child {
+    text-align: center;
+    width: 100%;
+}
+
+
