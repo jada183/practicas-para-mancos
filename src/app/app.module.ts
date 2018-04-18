@@ -15,6 +15,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { FormComponent } from './form/form.component';
 import { ListUsersComponent } from './list-users/list-users.component';
 import { SopaComponent } from './sopa/sopa.component';
+import { ServiciosMancosComponent } from './servicios-mancos/servicios-mancos.component';
 
 
 
@@ -25,7 +26,8 @@ import { SopaComponent } from './sopa/sopa.component';
     InicioComponent,
     FormComponent,
     ListUsersComponent,
-    SopaComponent
+    SopaComponent,
+    ServiciosMancosComponent
   ],
   imports: [
     BrowserModule,
