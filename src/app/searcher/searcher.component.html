@@ -3,9 +3,10 @@
       <h1> Buscador de Paises de europa</h1>
       <input #searchBoxCountries id="search-box-countries" (keyup)="search(searchBoxCountries.value)"/>
       <li *ngFor="let country of countries$ | async" >
-          <span>
-            {{country.name}}
-          </span>
+        <span><strong>Nombre:{{country.name}}</strong></span>
+
+        <span><strong>ubicacion: {{country.ubicacion}}</strong></span>
+
 
         </li>
     </div>
