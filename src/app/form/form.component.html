@@ -11,7 +11,7 @@
             <label for="country" class="country">Pais</label>
             <select id="country" name="country" [(ngModel)]="user.country">
               <option value="Pais" selected > Selecciona un país</option>
-              <option *ngFor="let country of countries" value="{{country}}">{{country}}</option>
+              <option *ngFor="let country of countries" value="{{country}}">{{country.name}}</option>
             </select>
 
             <label for="lemail" class="lemail">Correo</label>

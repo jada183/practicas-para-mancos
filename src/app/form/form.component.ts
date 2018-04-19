@@ -3,6 +3,7 @@ import { FormService } from '../form.service';
 import { UsersService } from '../users.service';
 import { User } from '../user';
 
+import { Country } from '../country';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -11,7 +12,7 @@ import { User } from '../user';
 
 export class FormComponent implements OnInit {
   user = new User;
-  countries: String[];
+  countries: Country[];
 
   constructor(private formService: FormService, public usersService: UsersService) { }
 
