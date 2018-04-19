@@ -1,7 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
+import { SearcherComponent  } from './searcher/searcher.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FormComponent } from './form/form.component';
 import { ListUsersComponent } from './list-users/list-users.component';
@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'users', component: ListUsersComponent },
   { path: 'formulario', component: FormComponent},
   { path: 'sopa', component: SopaComponent},
-  { path: 'servicios', component: ServiciosMancosComponent}
+  { path: 'servicios', component: ServiciosMancosComponent},
+  { path: 'buscador', component: SearcherComponent }
 ];
 
 @NgModule({

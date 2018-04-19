@@ -4,7 +4,8 @@
 
 h2 {
     text-align: center;
-    color: blue;
+    color:#2f5488;
+    font-size: 42px;
 }
 
 div {
@@ -22,12 +23,12 @@ p {
 }
 
 .infoAditional {
-    background: #bbfaed;
+    background: none;
     padding-top: 20px;
 }
 
 .infoAditionalLink {
-    color: blue;
+    color:#2f5488;
     text-decoration: underline;
 }
 
@@ -38,6 +39,10 @@ p {
 #serviciosMancos div:first-child {
     text-align: center;
     width: 100%;
+}
+#serviciosMancos {
+  background-image: url(../../assets/images/serviciosBackground.jpg);
+  background-size: 100% 100%;
 }
 
 

@@ -1,12 +1,17 @@
 button {
-    padding: 1% 5% 1% 5%;
+    padding: 0.7% 4% 0.7% 4%;
     font-size: 18px;
     border-radius: 14px;
+    background-image: Url(../../assets/images/blueButton.png);
+    background-size: 100% 100%;
+
+
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #cfd8dc;
+    background-image: Url(../../assets/images/yellowButton.png);
+    background-size: 100% 100%;
 }
 
 .fixed {
