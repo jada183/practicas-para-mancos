@@ -17,6 +17,7 @@ import { ListUsersComponent } from './list-users/list-users.component';
 import { SopaComponent } from './sopa/sopa.component';
 import { ServiciosMancosComponent } from './servicios-mancos/servicios-mancos.component';
 import { SearcherComponent } from './searcher/searcher.component';
+import { ImgUploadComponent } from './img-upload/img-upload.component';
 
 
 
@@ -29,7 +30,8 @@ import { SearcherComponent } from './searcher/searcher.component';
     ListUsersComponent,
     SopaComponent,
     ServiciosMancosComponent,
-    SearcherComponent
+    SearcherComponent,
+    ImgUploadComponent
   ],
   imports: [
     BrowserModule,

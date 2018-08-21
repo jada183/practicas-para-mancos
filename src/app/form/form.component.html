@@ -16,7 +16,7 @@
 
             <label for="lemail" class="lemail">Correo</label>
             <input type="email" id="lemail" name="lemail" placeholder="ejemplo@gmail.com"  [(ngModel)]="user.email">
-
+            <app-img-upload class="fileupload"></app-img-upload>
             <button class="submit" (click)="addUser()">Registrar</button>
         </div>
     </form>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormService } from '../form.service';
 import { UsersService } from '../users.service';
 import { User } from '../user';
-
+import { ImgUploadComponent } from '../img-upload/img-upload.component';
 import { Country } from '../country';
 @Component({
   selector: 'app-form',
